@@ -78,3 +78,32 @@ h2, h3, h4 {
   font-weight: bold;
   text-align: center;
 }
+
+.locations{
+  background-image: url("../pictures/img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
+}
+
+.locationflex{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.location{
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+  margin: 5px 20px;
+  flex-basis: 300px;
+}
+.contact{
+  height: 200px;
+}
+footer{
+  text-align: left;
+  padding-left: 20px;
+}
