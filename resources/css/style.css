@@ -1,3 +1,4 @@
+/* body, a, h2, h3, h4, div, and flex are general formatting that applys to all of Tea Cozy */
 body {
   margin: 0;
   font-family: Helvetica;
@@ -7,90 +8,96 @@ body {
   text-align: center;
   opacity: 0.9;
 }
-header{
+/* body, a, h2, h3, h4, div, and flex are general formatting that applys to all of Tea Cozy */
+a{
+  text-decoration: underline;
+  color: seashell;
+}
+/* body, a, h2, h3, h4, div, and flex are general formatting that applys to all of Tea Cozy */
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
+}
+/* body, a, h2, h3, h4, div, and flex are general formatting that applys to all of Tea Cozy */
+div{
+  display: block;
+}
+/* body, a, h2, h3, h4, div, and flex are general formatting that applys to all of Tea Cozy */
+.flex{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Header applys general formatting to all items in the header */
+header{
   align-items: center;
   position: fixed;
   border-bottom: 1px solid seashell;
   height: 69px;
   width: 100%;
   background-color: black;
+  z-index: 1;
 }
+/* header img specifically targets the image in the header (the Tea Cozy's logo) */
 header img {
   height: 50px;
   padding-left: 10px;
-  display: flex;
 }
+/* formatting the nav items in the header */
+nav{
+  flex-grow: 1;
+  text-align: right;
+}
+/* specifically formatting the span items in the nav */
 nav span{
-  display: inline-block;
   padding: 20px 10px;
 }
-a{
-  text-decoration: underline;
-  color: seashell;
-}
-.logo{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-grow: 1;
-}
-.main_content{
+/* main-content applys general formatting to the main page; includes mission, featured tea, location and contact. (excludes anything in the headers and footers) */
+.main-content{
   width: 1200px;
-  padding-top: 69px;
+  padding-top: 73px;
   margin: auto;
 }
-.mission{
-  display: flex;
+/* mission section */
+#mission{
   background-image: url("../pictures/img-mission-background.jpg");
   height: 700px;
   padding-top: 69px;
 }
-.mission .content{
+/* specific formatting for the contents in the mission section */
+#mission .content{
   margin:auto;
   width: 100%;
   background-color: black;
 }
-h2, h3, h4 {
-  margin: 0;
-  padding: 10px;
-}
-.pictureFlex{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-.featuredTea{
+/* featured tea section */
+.featuredtea{
   padding-top: 69px;
   width: 1000px;
   margin: auto;
 }
+/* formatting for the images in the featured tea section */
 .pictures img {
   height: 200px;
   width: 300px;
   margin: 10px;
   padding-top: 10px;
 }
+/* Formatting for the text on the images in the featured tea section */
 .pictures span{
   display: block;
   padding-top: 5px;
   font-weight: bold;
   text-align: center;
 }
-
+/* Locations section */
 .locations{
   background-image: url("../pictures/img-locations-background.jpg");
   height: 500px;
   padding-top: 70px;
+  margin-top: 70px;
 }
-
-.locationflex{
-  display: flex;
-  justify-content: center;
-  padding-top: 15px;
-}
-
+/* Formatting for each location */
 .location{
   opacity: 1;
   display: flex;
@@ -99,10 +106,13 @@ h2, h3, h4 {
   padding: 10px;
   margin: 5px 20px;
   flex-basis: 300px;
+  padding-top: 15px;
 }
+/* Contact section */
 .contact{
   height: 200px;
 }
+/* Footer section */
 footer{
   text-align: left;
   padding-left: 20px;
